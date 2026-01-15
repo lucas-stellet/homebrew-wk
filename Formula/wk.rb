@@ -5,21 +5,21 @@
 class Wk < Formula
   desc "Git worktree helper with hooks support"
   homepage "https://github.com/lucas-stellet/wk"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lucas-stellet/wk/releases/download/v0.6.0/wk_0.6.0_darwin_amd64.tar.gz"
-      sha256 "3bfdb347d5f26da3d9370bafa87e5a955ed5e57dd5dfd8fd9775a7509ae20c09"
+      url "https://github.com/lucas-stellet/wk/releases/download/v0.7.0/wk_0.7.0_darwin_amd64.tar.gz"
+      sha256 "4ccd09f1020caf71d23b2c0f11b3fbaca40ee5a375ddc0a13f88af7f08c8e560"
 
       def install
         bin.install "wk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lucas-stellet/wk/releases/download/v0.6.0/wk_0.6.0_darwin_arm64.tar.gz"
-      sha256 "147708afd8693ed179fc0ca2430414630b44a5fa8a52e63f9d885b91aa6bf6dc"
+      url "https://github.com/lucas-stellet/wk/releases/download/v0.7.0/wk_0.7.0_darwin_arm64.tar.gz"
+      sha256 "b172bfce78953fb2cfa0492da9c19199aff4c416dded34575e9695242d1f005b"
 
       def install
         bin.install "wk"
@@ -29,15 +29,15 @@ class Wk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucas-stellet/wk/releases/download/v0.6.0/wk_0.6.0_linux_amd64.tar.gz"
-      sha256 "973e1be0d14df4ff85c1a8659e91aaa20c1192ba7d3dd4c94e75b0450b718694"
+      url "https://github.com/lucas-stellet/wk/releases/download/v0.7.0/wk_0.7.0_linux_amd64.tar.gz"
+      sha256 "9afb42e8bd2d82c266ee51f2e7aa7af7cc5f67e985a8323db9779c4d62db1742"
       def install
         bin.install "wk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucas-stellet/wk/releases/download/v0.6.0/wk_0.6.0_linux_arm64.tar.gz"
-      sha256 "f0d1efb3b8908c5b597952f4aab63f17d26659678dab4147be0d3ae2358303e4"
+      url "https://github.com/lucas-stellet/wk/releases/download/v0.7.0/wk_0.7.0_linux_arm64.tar.gz"
+      sha256 "5bc22c4b245ae6e264dd499d7c6a7dab3f4e38f75885e88f00a94eed5513d49f"
       def install
         bin.install "wk"
       end
